@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Temperatures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+        </ul>
+        <div class="profile">
+            <img src="profile-pic.jpg" alt="Profile Picture">
+        </div>
+    </div>
+  </nav>
+
+  <div class="card">
+  
+    <div class="card-content">
+      <button class="apply-button" id="setting-icon">⚙️ Settings</button>
+      <ul class="city-list">
+        <li class="city-list-item">New York <span id="temp_New_York"></span></li>
+        <li class="city-list-item">Houston<span id="temp_Houston"></span></li>
+        <li class="city-list-item">London <span id="temp_London"></span></li>
+        <li class="city-list-item">Paris <span id="temp_Paris"></span></li>
+        <li class="city-list-item">Tokyo <span id="temp_Tokyo"></span></li>
+        <li class="city-list-item">Sydney <span id="temp_Sydney"></span></li>
+        <li class="city-list-item">Dubai <span id="temp_Dubai"></span></li>
+        <li class="city-list-item">Moscow <span id="temp_Moscow"></span></li>
+        <li class="city-list-item">Mumbai <span id="temp_Mumbai"></span></li>
+        <li class="city-list-item">Toronto <span id="temp_Toronto"></span></li>
+      </ul>
+    </div>
+  
+    <div class="card-content">
+      <button class="apply-button" id="setting-icon-graph">⚙️ Settings</button>
+      <div class="graph-container">
+        <canvas id="temperatureGraph" width="400" height="200"></canvas>
+      </div>
+    </div>
+  
+    <div class="card-content" id="attractions-container">
+      <div class="slider-container">
+      <div class="slider">
+        <!-- Images for slider -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3cEzq-X7v6mKKWarhrWuvc1stkA8OLvS-fA&s" alt="New York Attractions">
+        <img src="https://cdn.abcotvs.com/dip/images/2237654_072017-dunn-houston-tourist-attractions-vid.jpg?w=1600" alt="Houston Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vzQ5NQYfcQvBTj62wlmkDB-QvOtyaicWAw&s" alt="London Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8wlqRzZjcjcdmVczt8sVZxaC7e0eRg0_XiA&s" alt="Paris Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGMexGrSZSfHv2KRU3CoVNxvVIWQASzKUrg&s" alt="Tokyo Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYTHdWkKucjlm1VoWv7eerNmbI9D1tEBCdg&s" alt="Sydney Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPYOmEJD0iAmE_c-0qZSl3z6zZr3RPFQivQ&s" alt="Dubai Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4rrqvAZIami714wAwnMDFdHER1pW4h_nYA&s" alt="Moscow Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-V3wAyzWVgYqEB5NDO_MIcdQ3vUQJ--YpQ&s" alt="Mumbai Attractions">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvdHpEPggPZeFL_MD9-xjrOkHNXBqzLDbF4w&s" alt="Toronto Attractions">
+      </div>
+      <!-- Next and previous buttons -->
+      <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+      <div class="next" onclick="plusSlides(1)">&#10095;</div>
+      <h4> Click On Image To Visit More</h4>
+    </div>
+  </div>
+  
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="weather.js"></script>
+  <script src="Slider.js"></script>
+  </body>
+  </html>
